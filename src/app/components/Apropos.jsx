@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import React, { useTransition, useState } from "react";
 import Image from "next/image";
@@ -55,11 +56,11 @@ const AboutSection = () => {
   return (
     <section className="text-white" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image className="rounded-xl" src="/images/img_apropos.png" width={500} height={500} />
+        <Image className="rounded-xl" alt="à propos" src="/images/img_apropos.png" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">À propos de moi</h2>
-          <p className="text-base lg:text-lg">
-          Je suis un étudiant passionné par la création sous toutes ces formes,
+        <p className="text-base lg:text-lg">
+            Je suis un étudiant passionné par la création sous toutes ces formes,
             du design au développement. 
             J'ai de l'expérience avec de nombreux framework, tels que
             Vue.js, React, HTML/CSS, et même Wordpress.
@@ -68,7 +69,7 @@ const AboutSection = () => {
             mes compétences. J'ai l'esprit d'équipe et
             Je suis enthousiaste à l'idée de travailler avec d'autres personnes pour créer 
             des applications ou des visuels à couper le souffle !
-          </p>
+        </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
