@@ -24,8 +24,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>Fullstack Academy of Code</li>
-        <li>University of California, Santa Cruz</li>
+        <li>BUT Métier Multimédia Internet à Montbéliard</li>
+        <li>Baccalauréat STI2D au Lycée Jean-jacques Henner à Altkirch</li>
       </ul>
     ),
   },
@@ -33,9 +33,10 @@ const TAB_DATA = [
     title: "Certifications",
     id: "certifications",
     content: (
-      <ul className="list-disc pl-2">
-        <li>AWS Cloud Practitioner</li>
-        <li>Google Professional Cloud Developer</li>
+      <ul className="list-disc pl-2 pr-4">
+        <li>Stage de 10 semaines en communication digitale et design graphique
+            au Concervatoire Henri-Dutilleux à Belfort
+        </li>
       </ul>
     ),
   },
@@ -58,11 +59,15 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">À propos de moi</h2>
           <p className="text-base lg:text-lg">
-          Biw baw baw biw baw biaw baaw biw biw baw
-          Biw baw baw biw baw biaw baaw biw biw baw
-          Biw baw baw biw baw biaw baaw biw biw baw
-          Biw baw baw biw baw biaw baaw biw biw baw
-
+          Je suis un étudiant passionné par la création sous toutes ces formes,
+            du design au développement. 
+            J'ai de l'expérience avec de nombreux framework, tels que
+            Vue.js, React, HTML/CSS, et même Wordpress.
+            J'ai également des compétences en design graphique avec Figma, la suite Adobe. 
+            J'apprends vite et je cherche toujours à élargir mes
+            mes compétences. J'ai l'esprit d'équipe et
+            Je suis enthousiaste à l'idée de travailler avec d'autres personnes pour créer 
+            des applications ou des visuels à couper le souffle !
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
@@ -84,7 +89,7 @@ const AboutSection = () => {
               active={tab === "certifications"}
             >
               {" "}
-              On verra{" "}
+              Expérience professionnel{" "}
             </TabButton>
           </div>
           <div className="mt-8">
