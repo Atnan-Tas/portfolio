@@ -32,7 +32,7 @@ const projectsData = [
     image: "/images/UC.png",
     tag: ["Tout", "Sites"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/UnifiedChampions",
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const projectsData = [
     image: "/images/affiches.png",
     tag: ["Tout", "Visuels"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/CreationPerso",
   },
   {
     id: 5,
@@ -50,7 +50,7 @@ const projectsData = [
     image: "/images/cassandre.png",
     tag: ["Tout", "Visuels"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/cassandre",
   },
   {
     id: 6,
@@ -59,7 +59,7 @@ const projectsData = [
     image: "/images/UFC.png",
     tag: ["Tout", "Visuels"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/universitefc",
   },
 ];
 
