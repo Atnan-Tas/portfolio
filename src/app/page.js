@@ -2,7 +2,7 @@ import Image from "next/image";
 import Intro from "./components/Intro";
 import Header from "./components/Header";
 import Apropos from "./components/Apropos";
-
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -12,6 +12,7 @@ export default function Home() {
         <Intro />
         <Apropos />
       </div>
+      <Footer />
     </main>
   );
 }
