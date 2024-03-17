@@ -117,6 +117,7 @@ const Projets = () => {
               imgUrl={project.image}
               gitUrl={project.gitUrl}
               previewUrl={project.previewUrl}
+              tags={project.tag}
             />
           </motion.li>
         ))}
