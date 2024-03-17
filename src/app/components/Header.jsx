@@ -9,7 +9,7 @@ import MenuOverlay from './MenuOverlay';
 const navLinks = [
   { title: "A propos", path: "#apropos" },
   { title: "Mes Travaux", path: "#travaux" },
-  { title: "Contact", path: "#contact" },
+  { title: "Contact", path: "../contact" },
 ]
 
 const Navbar = () => {
