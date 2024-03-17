@@ -9,40 +9,42 @@ import Image from "next/image";
 
 const Contact = () => {
   const [emailSubmitted, setEmailSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState('');
+
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setEmailSubmitted(false);
+    setSubmitError('');
     const data = {
       email: e.target.email.value,
       subject: e.target.subject.value,
       message: e.target.message.value,
     };
-    const JSONdata = JSON.stringify(data);
-    const endpoint = "/api/send";
 
-    const options = {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSONdata,
-    };
+   try {
+      const response = await fetch('/api/send', {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
 
-    const response = await fetch(endpoint, options);
-    const resData = await response.json();
-
-    if (response.status === 200) {
-      console.log("Message sent.");
-      setEmailSubmitted(true);
+      if (response.ok) {
+        setEmailSubmitted(true);
+      } else {
+        const resData = await response.json();
+        setSubmitError(resData.message || 'Erreur lors de l\'envoi du message.');
+      }
+    } catch (error) {
+      setSubmitError('Une erreur est survenue.');
     }
   };
 
   return (
-    <section
-      id="contact"
-      className=" md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative"
-    >
-        <Header />
+    <section id="contact" className="md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
+      <Header />
       <div className="bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2"></div>
       <div className="z-10">
         <h5 className="text-xl font- ml-4 text-white my-2">
@@ -124,6 +126,8 @@ const Contact = () => {
           </form>
         )}
       </div>
+      {emailSubmitted && <p className="text-green-500">Votre message a été envoyé avec succès!</p>}
+      {submitError && <p className="text-red-500">{submitError}</p>}
         <Footer />
     </section>
   );
