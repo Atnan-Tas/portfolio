@@ -126,7 +126,6 @@ const Contact = () => {
           </form>
         )}
       </div>
-      {emailSubmitted && <p className="text-green-500">Votre message a été envoyé avec succès!</p>}
       {submitError && <p className="text-red-500">{submitError}</p>}
         <Footer />
     </section>

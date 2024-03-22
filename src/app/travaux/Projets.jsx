@@ -4,11 +4,12 @@ import ProjectCard from "./Card";
 import ProjectTag from "./Tag";
 import { motion, useInView } from "framer-motion";
 
+
 const projectsData = [
   {
     id: 1,
     title: "Site Web Portfolio React Next.js",
-    description: "Project 1 description",
+    description: "Bienvenue dans mon portfolio, votre prochaine source d'inspiration.",
     image: "/images/portfolio.png",
     tag: ["Tout", "Sites"],
     gitUrl: "https://portfolio.atnantas.fr",
@@ -17,47 +18,47 @@ const projectsData = [
   {
     id: 2,
     title: "CooHop! Le site de rencontre sportive",
-    description: "Project 2 description",
+    description: "Faire du sport en groupe n'a jamais été aussi simple.",
     image: "/images/coohop.png",
     tag: ["Tout", "Sites"],
     gitUrl: "https://coohop.angelo-simoes.fr",
-    previewUrl: "/",
+    previewUrl: "/coohop",
   },
   {
     id: 3,
-    title: "Unified Champions Club",
-    description: "Project 3 description",
+    title: "Unified Champions - Club E-sport",
+    description: "Rejoignez-nous et devenez un champion.",
     image: "/images/UC.png",
     tag: ["Tout", "Sites"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/UnifiedChampions",
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
+    title: "Créations personnelles",
+    description: "Découvrez mes créations personnelles sur le thème du sport.",
+    image: "/images/affiches.png",
+    tag: ["Tout", "Visuels"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/CreationPerso",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
+    title: "Carte Postale Cassandre",
+    description: "Des cartes postales au style de Cassandre (Adolphe Mouron).",
+    image: "/images/cassandre.png",
+    tag: ["Tout", "Visuels"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/cassandre",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
+    title: "Charte Graphique - 600 ans de l'Université Franche-Comté",
     description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
+    image: "/images/UFC.png",
+    tag: ["Tout", "Visuels"],
     gitUrl: "/",
-    previewUrl: "/",
+    previewUrl: "/universitefc",
   },
 ];
 
@@ -80,8 +81,9 @@ const Projets = () => {
   };
 
   return (
-    <section id="projects">
-      <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">
+    <main className="flex min-h-screen flex-col bg-[#0e081f]">
+    <section  id="projects">
+      <h2 className="text-center text-4xl font-bold text-white mt-28 mb-8 md:mb-12">
         Mes Travaux
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
@@ -97,32 +99,36 @@ const Projets = () => {
         />
         <ProjectTag
           onClick={handleTagChange}
-          name="Affiches"
-          isSelected={tag === "Affiches"}
+          name="Visuels"
+          isSelected={tag === "Visuels"}
         />
+      </div> 
+
+      <div className="container mt-2 mx-auto px-12 py-4">
+        <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+          {filteredProjects.map((project, index) => (
+            <motion.li
+              key={index}
+              variants={cardVariants}
+              initial="initial"
+              animate={isInView ? "animate" : "initial"}
+              transition={{ duration: 0.3, delay: index * 0.4 }}
+            >
+              <ProjectCard
+                key={project.id}
+                title={project.title}
+                description={project.description}
+                imgUrl={project.image}
+                gitUrl={project.gitUrl}
+                previewUrl={project.previewUrl}
+                tags={project.tag}
+              />
+            </motion.li>
+          ))}
+        </ul>
       </div>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {filteredProjects.map((project, index) => (
-          <motion.li
-            key={index}
-            variants={cardVariants}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{ duration: 0.3, delay: index * 0.4 }}
-          >
-            <ProjectCard
-              key={project.id}
-              title={project.title}
-              description={project.description}
-              imgUrl={project.image}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
-              tags={project.tag}
-            />
-          </motion.li>
-        ))}
-      </ul>
     </section>
+    </main>
   );
 };
 
