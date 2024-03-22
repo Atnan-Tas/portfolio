@@ -29,10 +29,10 @@ const Intro = () => {
                             <br /> <br />
                             <TypeAnimation className='text-5xl md:text-6xl lg:text-7xl'
                                 sequence={[
-                                    'Atnan', 1000,
-                                    'Étudiant', 1000,
-                                    'Designer', 1000,
-                                    'Developpeur', 1000
+                                    'Atnan', 800,
+                                    'Étudiant', 800,
+                                    'Designer', 800,
+                                    'Developpeur', 800
                                 ]}
                                 wrapper="span"
                                 speed={50}

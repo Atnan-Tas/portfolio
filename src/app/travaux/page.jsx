@@ -82,7 +82,7 @@ const Projets = () => {
   };
 
   return (
-    <main className="flex min-h-screen flex-col bg-[#101010]">
+    <main className="flex min-h-screen flex-col bg-[#150515]">
     <section  id="projects">
       <Header /> 
       <h2 className="text-center text-4xl font-bold text-white mt-28 mb-8 md:mb-12">
