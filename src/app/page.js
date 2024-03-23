@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Apropos from "./components/Apropos";
 import Footer from "./components/Footer";
 import Projet from "./travaux/Projets";
+import Competences from "./components/competences";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <div className="container mt-24 mx-auto px-12 py-4">
         <Intro />
+        <Competences />
         <Apropos />
         <Projet />
       </div>

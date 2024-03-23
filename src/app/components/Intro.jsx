@@ -41,7 +41,7 @@ const Intro = () => {
                             />
                     </h1>
                     <p className='text-[#adb7be] text-base sm:text-lg lg:text-xl mb-6'>
-                        Bienvenu sur mon portfolio, ici vous retrouverez tout mes travaux
+                        Bienvenu sur mon portfolio, découvrez tout mes travaux ici !
                     </p>
                     <div className=''>
                         <Link href='/contact'>
