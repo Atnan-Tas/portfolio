@@ -2,6 +2,7 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { TypeAnimation } from 'react-type-animation';
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 
@@ -43,9 +44,11 @@ const Intro = () => {
                         Bienvenu sur mon portfolio, ici vous retrouverez tout mes travaux
                     </p>
                     <div className=''>
+                        <Link href='/contact'>
                         <button className='px-6 py-3 rounded-full w-80 sm:mr-4 md:mr-4 lg:mr-4 sm:w-fit bg-gradient-to-br from-purple-500 via-purple-500 to-yellow-500 hover:bg-slate-200 text-white'>
                             Contactez-moi
                         </button>
+                        </Link>
                         <button onClick={downloadCV} className='px-1 py-1 rounded-full w-80 sm:w-fit bg-gradient-to-br from-purple-500 via-purple-500 to-yellow-500 hover:bg-slate-800 text-white mt-3'>
                             <span className='block bg-[#101010] hover:bg-slate-800 rounded-full px-5 py-2'>Voir mon CV</span>
                         </button>

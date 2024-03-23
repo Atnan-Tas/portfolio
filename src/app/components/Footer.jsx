@@ -34,7 +34,7 @@ const Footer = () => {
         </Image>
         </Link>
                 
-        <p className="text-slate-600">jmettrai un truc ici</p>
+        <p className="text-slate-600">MMI Montbéliard</p>
       </div>
     </footer>
   );

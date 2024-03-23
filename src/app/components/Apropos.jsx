@@ -59,7 +59,7 @@ const AboutSection = () => {
         <Image className="rounded-xl" alt="à propos" src="/images/img_apropos.png" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">À propos de moi</h2>
-        <p className="text-base lg:text-lg">
+        <p className="text-justify lg:text-lg">
             Je suis un étudiant passionné par la création sous toutes ces formes,
             du design au développement. 
             J'ai de l'expérience avec de nombreux framework, tels que
