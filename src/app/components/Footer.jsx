@@ -34,7 +34,10 @@ const Footer = () => {
         </Image>
         </Link>
                 
-        <p className="text-slate-600">MMI Montbéliard</p>
+        <div className="flex flex-col">
+          <p className="text-slate-600">atnan.tas.pro@gmail.com</p>
+          <p className="text-slate-600">07.83.14.73.72</p>
+        </div>
       </div>
     </footer>
   );
