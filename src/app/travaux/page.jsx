@@ -14,7 +14,7 @@ const projectsData = [
     image: "/images/portfolio.png",
     tag: ["Tout", "Sites"],
     gitUrl: "https://portfolio.atnantas.fr",
-    previewUrl: "/",
+    previewUrl: " /",
   },
   {
     id: 2,
@@ -31,7 +31,7 @@ const projectsData = [
     description: "Rejoignez-nous et devenez un champion.",
     image: "/images/UC.png",
     tag: ["Tout", "Sites"],
-    gitUrl: "/",
+    gitUrl: "https://unifiedchampions.jfleurent.fr/",
     previewUrl: "/UnifiedChampions",
   },
   {
