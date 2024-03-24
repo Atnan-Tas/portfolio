@@ -5,12 +5,16 @@ import Apropos from "./components/Apropos";
 import Footer from "./components/Footer";
 import Projet from "./travaux/Projets";
 import Competences from "./components/competences";
+import Etoiles from "./components/etoiles";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col bg-[#0e081f]">
+    <main className="flex min-h-screen flex-col bg-[#040015]">
       <Header />
-      <div className="container mt-24 mx-auto px-12 py-4">
+      <Etoiles />
+
+      <div className="relative z-30 container mt-24 mx-auto px-12 py-4">
+      
         <Intro />
         <Competences />
         <Apropos />

@@ -5,7 +5,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 
-
 const Intro = () => {
     // Fonction pour gérer le téléchargement
     const downloadCV = async () => {
@@ -24,6 +23,7 @@ const Intro = () => {
     return (
         <section>
             <div className='grid grid-cols-1 sm:grid-cols-12'>
+                
                 <div className="col-span-7   place-self-center text-center sm:text-left">
                     <h1 className="text-white mb-4 text-3xl sm:text-2xl lg:text-5xl font-extrabold block">
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 via-purple-500  to-yellow-500">Bonjour, je suis </span>

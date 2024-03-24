@@ -36,7 +36,7 @@ const competences = () => {
                 <div className="row">
                     <div className="col-12">
                         <div className="bg-[#080512] wow zoomIn rounded-3xl text-center py-14 px-12 mt-[-60px]">
-                            <h2 className='font-bold text-[45px]'>Mes Compétences</h2>
+                            <h2 className='font-bold  text-xl   sm:text-[30px]   md:text-[37px]  lg:text-[45px]'>Mes Compétences</h2>
                             <p className='text-[#B8B8B8] text-[18px] tracking-[0.8px] leading-[1.5em] my-[14px] mb-[75px]'>Voici un jugement personnel sur mes compétences dans chacunes de ces catégories.<br></br> Ce sont des statistiques purement subjectives.</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme w-[80%] mx-auto relative">
                                 <div className="w-[50%] mx-auto mb-[15px]">
