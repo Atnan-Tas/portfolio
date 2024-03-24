@@ -2,10 +2,13 @@ import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import Image from 'next/image'
+import Etoiles from '../components/etoiles'
 
 const Coohop = () => {
   return (
     <section>
+      <Etoiles />
+      <div className='relative z-30'>
       <Header />
       <h2 className="text-center text-4xl font-bold text-white mt-28 mb-8 md:mb-12">
           CooHop!
@@ -47,6 +50,7 @@ const Coohop = () => {
         </div>
         <Image className="rounded-xl" alt="à propos" src="/images/profil.png" width={500} height={500} />
         
+      </div>
       </div>
       <Footer /> 
     </section>

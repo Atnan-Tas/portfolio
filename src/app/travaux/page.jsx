@@ -5,6 +5,7 @@ import ProjectTag from "./Tag";
 import { motion, useInView } from "framer-motion";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Etoiles from "../components/etoiles";
 
 const projectsData = [
   {
@@ -83,8 +84,10 @@ const Projets = () => {
 
   return (
     <main className="flex min-h-screen flex-col bg-[#150515]">
-    <section  id="projects">
+    <Etoiles />
+    <section className="relative z-30"  id="projects">
       <Header /> 
+      
       <h2 className="text-center text-4xl font-bold text-white mt-28 mb-8 md:mb-12">
         Mes Travaux
       </h2>

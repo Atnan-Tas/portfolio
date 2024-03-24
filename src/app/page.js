@@ -10,11 +10,10 @@ import Etoiles from "./components/etoiles";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col bg-[#040015]">
-      <Header />
       <Etoiles />
 
       <div className="relative z-30 container mt-24 mx-auto px-12 py-4">
-      
+      <Header />
         <Intro />
         <Competences />
         <Apropos />
