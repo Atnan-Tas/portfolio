@@ -20,11 +20,11 @@ const Coohop = () => {
         <p className="text-justify lg:text-lg">
         Nous avons réalisé un projet collectif, qui à pour but de mettre en place un site et une application 
         qui permet aux sportifs de se retrouver pour d&apos;avantage de dualité. 
-        Pour cela nous avons à l'aide d'autres camarades, effectué toute la communication de ce projet que ce soit le marketing, la stratégie de communication, l’identité visuelle, 
-        la maquette, ainsi que la création de la Landing page et de l’application finale.
+        Pour cela nous avons à l&apos;aide d&apos;autres camarades, effectué toute la communication de ce projet que ce soit le marketing, la stratégie de communication, l’identité visuelle, 
+        la maquette, ainsi que la création de la Landing page et de l&apos;application finale.
         Notre site permet aux sportifs adeptes de jeux collectif de trouver facilement des organisations 
         à but non lucratif qui ont besoin de leur aide. Ce site peut aider à connecter les personnes souhaitant 
-        donner de leur temps et de leurs énergie dans des discipline collectif qu’ils apprécient, tout en utilisant 
+        donner de leur temps et de leurs énergie dans des discipline collectif qu&apos;ils apprécient, tout en utilisant 
         des infrastructure extérieurs.
         </p>
         </div>
@@ -34,15 +34,15 @@ const Coohop = () => {
           <h2 className="text-4xl font-bold text-white mb-4">Comment fonctionne Coohop ?</h2>
         <p className="text-justify lg:text-lg">
         Coohop est une plateforme innovante qui redéfinit la manière dont les sportifs se rencontrent et organisent 
-        des événements collectifs. Dès l'inscription, chaque utilisateur est invité à créer son profil personnel, 
+        des événements collectifs. Dès l&apos;inscription, chaque utilisateur est invité à créer son profil personnel, 
         offrant ainsi une dimension unique à son expérience sur la plateforme. Les membres ont la possibilité de 
-        lancer des événements sportifs, en définissant le type de sport, le lieu précis et l'heure, ce qui facilite 
+        lancer des événements sportifs, en définissant le type de sport, le lieu précis et l&apos;heure, ce qui facilite 
         la rencontre entre passionnés du même sport dans leur localité. Ce qui rend Coohop particulièrement attrayant, 
-        c'est sa capacité à afficher dynamiquement ces événements sur une carte interactive, permettant aux utilisateurs
-         de visualiser en un coup d'œil les activités disponibles autour d'eux et de rejoindre celles qui correspondent 
-         à leurs intérêts et disponibilités. Outre l'organisation et la participation aux événements, la plateforme 
+        c&apos;est sa capacité à afficher dynamiquement ces événements sur une carte interactive, permettant aux utilisateurs
+         de visualiser en un coup d&apos;œil les activités disponibles autour d&apos;eux et de rejoindre celles qui correspondent 
+         à leurs intérêts et disponibilités. Outre l&apos;organisation et la participation aux événements, la plateforme 
          encourage une interaction riche et significative entre les membres grâce à un système de messagerie intégré, 
-         qui permet des échanges fluides et directs, que ce soit pour discuter des détails d'un événement à venir ou 
+         qui permet des échanges fluides et directs, que ce soit pour discuter des détails d&apos;un événement à venir ou 
          pour partager des conseils et des expériences. Cette approche holistique non seulement simplifie la logistique 
          inhérente à la pratique de sports collectifs mais contribue également à tisser des liens solides au sein de la 
          communauté sportive, encourageant ainsi un mode de vie actif et sociable.
