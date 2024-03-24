@@ -42,7 +42,6 @@ const UnifiedChampions = () => {
         </p>
         </div>
         <Image className="rounded-xl" alt="à propos" src="/images/Article_details.png" width={500} height={500} />
-        
       </div>
       </div>
       <Footer /> 
