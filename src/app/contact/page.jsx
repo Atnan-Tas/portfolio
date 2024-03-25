@@ -131,9 +131,9 @@ const Contact = () => {
             </form>
           )}
         </div>
+        <Footer />
       </div>
       {submitError && <p className="text-red-500">{submitError}</p>}
-        <Footer />
     </main>
   );
 };

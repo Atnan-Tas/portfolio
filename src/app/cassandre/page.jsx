@@ -43,8 +43,8 @@ const Cassandre = () => {
         </div>
         <Image className="rounded-xl" alt="à propos" src="/images/affiche_riyad.png" width={350} height={350} />
       </div>
-      </div>
       <Footer /> 
+      </div>
     </section>
 
   )

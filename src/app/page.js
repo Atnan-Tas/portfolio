@@ -18,8 +18,9 @@ export default function Home() {
         <Competences />
         <Apropos />
         <Projet />
+        <Footer />
       </div>
-      <Footer />
+      
     </main>
   );
 }

@@ -51,8 +51,8 @@ const Coohop = () => {
         <Image className="rounded-xl" alt="à propos" src="/images/profil.png" width={500} height={500} />
         
       </div>
-      </div>
       <Footer /> 
+      </div>
     </section>
 
   )

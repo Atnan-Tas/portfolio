@@ -48,8 +48,8 @@ const UFC = () => {
         src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F75LKiSMBQz9uXSzJYKq75M%2FCharte_graphique_600_ans_UFC%3Ftype%3Ddesign%26node-id%3D0%253A1%26mode%3Ddesign%26t%3DKdlm7hVrW1ElKK09-1"
         allowFullScreen
         ></iframe>
+        <Footer /> 
       </div>
-      <Footer /> 
       </div>
     </section>
 

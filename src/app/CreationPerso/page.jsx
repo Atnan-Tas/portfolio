@@ -47,8 +47,8 @@ const Affiches = () => {
         </div>
         <Image className="rounded-xl" alt="à propos" src="/images/lebron.png" width={350} height={350} />
       </div>
-      </div>
       <Footer /> 
+      </div>
     </section>
 
   )
