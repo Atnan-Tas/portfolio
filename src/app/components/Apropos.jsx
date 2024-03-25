@@ -65,9 +65,9 @@ const AboutSection = () => {
             J'ai de l'expérience avec de nombreux framework, tels que
             Vue.js, React, HTML/CSS, et même Wordpress.
             J'ai également des compétences en design graphique avec Figma, la suite Adobe. 
-            J'apprends vite et je cherche toujours à élargir mes
+            J'apprends vite et je cherche toujours à élargir
             mes compétences. J'ai l'esprit d'équipe et
-            Je suis enthousiaste à l'idée de travailler avec d'autres personnes pour créer 
+            je suis enthousiaste à l'idée de travailler avec d'autres personnes pour créer 
             des applications ou des visuels à couper le souffle !
         </p>
           <div className="flex flex-row justify-start mt-8">
