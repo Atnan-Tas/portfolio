@@ -8,7 +8,6 @@ import WP from '../../../public/WP.svg';
 import IDD from '../../../public/IDD.svg';
 import Vue from '../../../public/Vue.svg';
 import React from '../../../public/React.svg';
-import icon from '../../../public/Next.svg';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -77,10 +76,6 @@ const competences = () => {
                                 <div className="w-[50%] mx-auto mb-[15px]">
                                 <Image src={Vue} alt="Image" />
                                 <h5 className='mt-2'>Vue.js</h5>
-                                </div>
-                                <div className="w-[50%] mx-auto mb-[15px]">
-                                <Image src={icon} alt="Image" />
-                                <h5 className='mt-2'>Next.js</h5>
                                 </div>
                                 <div className="w-[50%] mx-auto mb-[15px]">
                                 <Image src={IDD} alt="Image" />
