@@ -1,7 +1,14 @@
 "use client";
-import cadrant1 from '../../../public/cadrant1.svg';
-import cadrant2 from '../../../public/cadrant2.svg';
-import cadrant3 from '../../../public/cadrant3.svg';
+import AI from '../../../public/AI.svg';
+import AE from '../../../public/AE.svg';
+import PP from '../../../public/PP.svg';
+import PS from '../../../public/PS.svg';
+import Figma from '../../../public/Figma.svg';
+import WP from '../../../public/WP.svg';
+import IDD from '../../../public/IDD.svg';
+import Vue from '../../../public/Vue.svg';
+import React from '../../../public/React.svg';
+import Next from '../../../public/Next.svg';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -37,19 +44,47 @@ const competences = () => {
                     <div className="col-12">
                         <div className="bg-[#080512] wow zoomIn rounded-3xl text-center py-14 px-12 mt-[-60px]">
                             <h2 className='font-bold  text-xl   sm:text-[30px]   md:text-[37px]  lg:text-[45px]'>Mes Compétences</h2>
-                            <p className='text-[#B8B8B8] text-[18px] tracking-[0.8px] leading-[1.5em] my-[14px] mb-[75px]'>Voici un jugement personnel sur mes compétences dans chacunes de ces catégories.<br></br> Ce sont des statistiques purement subjectives.</p>
+                            <p className='text-[#B8B8B8] text-[18px] tracking-[0.8px] leading-[1.5em] my-[14px] mb-[75px]'>Voici les outils dans lequels j&apos;ai aquéris des compétences<br></br> suite a mes projets personnelles et scolaires.</p>
                             <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme w-[80%] mx-auto relative">
                                 <div className="w-[50%] mx-auto mb-[15px]">
-                                <Image src={cadrant1} alt="Image" />
-                                <h5 className='mt-2'>Design</h5>
+                                <Image src={AI} alt="Image" />
+                                <h5 className='mt-2'>Adobe Illustrator</h5>
                                 </div>
                                 <div className="w-[50%] mx-auto mb-[15px]">
-                                <Image src={cadrant2} alt="Image" />
-                                <h5 className='mt-2'>Communication</h5>
+                                <Image src={PP} alt="Image" />
+                                <h5 className='mt-2'>Premier Pro</h5>
                                 </div>
                                 <div className="w-[50%] mx-auto mb-[15px]">
-                                <Image src={cadrant3} alt="Image" />
-                                <h5 className='mt-2'>Développement Web</h5>
+                                <Image src={AE} alt="Image" />
+                                <h5 className='mt-2'>After Effect Web</h5>
+                                </div>
+                                <div className="w-[50%] mx-auto mb-[15px]">
+                                <Image src={PS} alt="Image" />
+                                <h5 className='mt-2'>Photoshop Web</h5>
+                                </div>
+                                <div className="w-[50%] mx-auto mb-[15px]">
+                                <Image src={WP} alt="Image" />
+                                <h5 className='mt-2'>WordPress</h5>
+                                </div>
+                                <div className="w-[50%] mx-auto mb-[15px]">
+                                <Image src={Figma} alt="Image" />
+                                <h5 className='mt-2'>Figma</h5>
+                                </div>
+                                <div className="w-[50%] mx-auto mb-[15px]">
+                                <Image src={React} alt="Image" />
+                                <h5 className='mt-2'>React</h5>
+                                </div>
+                                <div className="w-[50%] mx-auto mb-[15px]">
+                                <Image src={Vue} alt="Image" />
+                                <h5 className='mt-2'>Vue.js</h5>
+                                </div>
+                                <div className="w-[50%] mx-auto mb-[15px]">
+                                <Image src={Next} alt="Image" />
+                                <h5 className='mt-2'>Next.js</h5>
+                                </div>
+                                <div className="w-[50%] mx-auto mb-[15px]">
+                                <Image src={IDD} alt="Image" />
+                                <h5 className='mt-2'>Adobe InDesign</h5>
                                 </div>
                                 
                             </Carousel>
