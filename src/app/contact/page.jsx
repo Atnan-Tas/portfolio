@@ -64,7 +64,7 @@ const Contact = () => {
             <Link className="ml-4  w-9" href="https://instagram.com/atnanzer/">
               <Image src={InstaIcon} alt="Insta Icon" />
             </Link>
-            <Link href="linkedin.com">
+            <Link href="https://www.linkedin.com/in/atnan-tas-8a4b82257/">
               <Image src={LinkedinIcon} alt="Linkedin Icon" />
             </Link>
           </div>
