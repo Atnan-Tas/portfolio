@@ -33,7 +33,8 @@ const Intro = () => {
                                     'Atnan', 800,
                                     'Étudiant', 800,
                                     'Designer', 800,
-                                    'Developpeur', 800
+                                    'Developpeur', 800,
+                                    'Communicant', 800
                                 ]}
                                 wrapper="span"
                                 speed={50}

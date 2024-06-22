@@ -54,11 +54,29 @@ const projectsData = [
   {
     id: 6,
     title: "Charte Graphique - 600 ans de l'Université Franche-Comté",
-    description: "Project 5 description",
+    description: "Charte graphique pour les 600 ans de l'université de Franche-Comté.",
     image: "/images/UFC.png",
     tag: ["Tout", "Visuels"],
     gitUrl: "/",
     previewUrl: "/universitefc",
+  },
+  {
+    id: 7,
+    title: "Conservatoire Henri Dutilleux - La Maîtrise",
+    description: "Vidéo réalisée durant le stage au conservatoire, présentant la maîtrise, un enseignemant de l'établissement.",
+    image: "/images/Miniature_Capsule_Maitrise_2.png",
+    tag: ["Tout", "Vidéo"],
+    gitUrl: "https://youtu.be/FnUM2CHSIps?si=Yw4v2pCWiG_F_9H8",
+    previewUrl: "/",
+  },
+  {
+    id: 8,
+    title: "Conservatoire Henri Dutilleux - La Journée Portes Ouvertes",
+    description: "Vidéo réalisée durant le stage au conservatoire, pour mettre en avant la journée portes ouvertes.",
+    image: "/images/PO.jpg",
+    tag: ["Tout", "Vidéo"],
+    gitUrl: "https://youtu.be/m_2kUOeTzU4?si=nLj2FagR2yBDIz9-",
+    previewUrl: "/",
   },
 ];
 
@@ -101,6 +119,11 @@ const Projets = () => {
           onClick={handleTagChange}
           name="Visuels"
           isSelected={tag === "Visuels"}
+        />
+        <ProjectTag
+          onClick={handleTagChange}
+          name="Vidéo"
+          isSelected={tag === "Vidéo"}
         />
       </div> 
 
