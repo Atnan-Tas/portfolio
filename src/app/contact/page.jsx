@@ -76,59 +76,48 @@ const Contact = () => {
             </p>
           ) : (
             <form className="flex flex-col" onSubmit={handleSubmit}>
-              <div className="mb-6">
-                <label
-                  htmlFor="email"
-                  className="text-white block mb-2 text-sm font-medium"
-                >
-                  Votre adresse mail
-                </label>
-                <input
-                  name="email"
-                  type="email"
-                  id="email"
-                  required
-                  className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                  placeholder="ex:bonjour@gmail.com"
-                />
-              </div>
-              <div className="mb-6">
-                <label
-                  htmlFor="subject"
-                  className="text-white block text-sm mb-2 font-medium"
-                >
-                  Sujet
-                </label>
-                <input
-                  name="subject"
-                  type="text"
-                  id="subject"
-                  required
-                  className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                  placeholder="ex:Proposition de collaboration"
-                />
-              </div>
-              <div className="mb-6">
-                <label
-                  htmlFor="message"
-                  className="text-white block text-sm mb-2 font-medium"
-                >
-                  Message
-                </label>
-                <textarea
-                  name="message"
-                  id="message"
-                  className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
-                  placeholder="ex:Je vous contact pour..."
-                />
-              </div>
-              <button
-                type="submit"
-                className="bg-purple-500  text-white font-medium py-2.5 px-5 rounded-lg w-80 mx-auto mb-4"
-              >
-                Envoyer
-              </button>
-            </form>
+  <div className="mb-6">
+    <label htmlFor="email" className="text-white block mb-2 text-sm font-medium">
+      Votre adresse mail
+    </label>
+    <input
+      name="email"
+      type="email"
+      id="email"
+      required
+      className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+      placeholder="ex:bonjour@gmail.com"
+    />
+  </div>
+  <div className="mb-6">
+    <label htmlFor="subject" className="text-white block text-sm mb-2 font-medium">
+      Sujet
+    </label>
+    <input
+      name="subject"
+      type="text"
+      id="subject"
+      required
+      className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+      placeholder="ex:Proposition de collaboration"
+    />
+  </div>
+  <div className="mb-6">
+    <label htmlFor="message" className="text-white block text-sm mb-2 font-medium">
+      Message
+    </label>
+    <textarea
+      name="message"
+      id="message"
+      className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
+      placeholder="ex:Je vous contact pour..."
+    />
+  </div>
+  <button type="submit" className="bg-purple-500 text-white font-medium py-2.5 px-5 rounded-lg w-80 mx-auto mb-4">
+    Envoyer
+  </button>
+</form>
+
           )}
         </div>
         <Footer />
