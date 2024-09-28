@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Projet from "./travaux/Projets";
 import Competences from "./components/competences";
 import Etoiles from "./components/etoiles";
+import Nouveau from "./components/Nouveau";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <div className="relative z-30 container mt-24 mx-auto px-12 py-4">
       <Header />
         <Intro />
+        <Nouveau />
         <Competences />
         <Apropos />
         <Projet />
